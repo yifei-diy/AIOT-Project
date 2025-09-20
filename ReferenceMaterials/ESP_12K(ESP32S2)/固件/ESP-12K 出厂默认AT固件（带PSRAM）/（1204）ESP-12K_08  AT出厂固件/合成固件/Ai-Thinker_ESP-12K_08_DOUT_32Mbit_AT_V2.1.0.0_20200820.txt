@@ -1,0 +1,17 @@
+Check Time:  2020-08-21 13:52:03
+MD5:  3557594697B8A0ADAFB656B6B279C08C
+
+Module Type: ESP32
+
+*************** File Info ***************
+
+File Name: Ai-Thinker_ESP-12K_08_DOUT_32Mbit_AT_V2.1.0.0_20200820.bin.bin
+File Size: 4096 KB (32.00Mbits)
+
+*************** Flash Info ***************
+
+SPI MODE: DOUT
+SPI SPEED: 40MHZ
+Flash Size: 32Mbits
+
+*****************************************

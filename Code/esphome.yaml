@@ -1,0 +1,49 @@
+esphome:
+  name: esp32s2-sht30
+  friendly_name: ESPHOME
+
+esp32:
+  board: esp32-s2-saola-1
+  framework:
+    type: esp-idf
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "G3hgQoDGW9IUQcDnovhfQ63gUTQR3IdOFBsrgqmWpzc="
+
+ota:
+  - platform: esphome
+    password: "89a3d71d786199b517928d35e3cdc29a"
+
+wifi:
+  ssid: wifi_ssid
+  password: wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome Fallback Hotspot"
+    password: "cIxuLRG8uL3S"
+
+captive_portal:
+
+i2c:
+  sda: 2
+  scl: 3
+  scan: true
+  frequency: 100kHz
+  timeout: 10ms
+
+# Example configuration entry
+sensor:
+  - platform: sht3xd
+    temperature:
+      name: "Living Room Temperature"
+    humidity:
+      name: "Living Room Humidity"
+    address: 0x44
+    update_interval: 60s
+    
